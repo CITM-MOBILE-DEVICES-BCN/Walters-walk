@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public List<GameObject> screenPrefabs;
     public List<GameObject> activeScreens;
 
+    public GameObject canvasForInstantiations;
+
     private void Awake()
     {
         if (instance == null)
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
         if (screenToInstantiate != null)
         {
             var screen = Instantiate(screenToInstantiate);
+            screen.transform.SetParent(canvasForInstantiations.transform, false);
             this.activeScreens.Add(screen);
         }
     }
