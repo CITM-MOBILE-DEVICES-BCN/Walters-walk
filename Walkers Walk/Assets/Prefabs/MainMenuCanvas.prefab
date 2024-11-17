@@ -745,32 +745,6 @@ MonoBehaviour:
           m_StringArgument: ShopCanvas
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4857316137728675582, guid: d27d89f94e39c954a8bbf476e6d72345,
-          type: 3}
-        m_TargetAssemblyTypeName: NavigationController, Assembly-CSharp
-        m_MethodName: LoadScreen
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ShopButtons
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4857316137728675582, guid: d27d89f94e39c954a8bbf476e6d72345,
-          type: 3}
-        m_TargetAssemblyTypeName: NavigationController, Assembly-CSharp
-        m_MethodName: DeactivateScreenAtIndex
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MainMenuCanvas
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &5175289838559756269
 GameObject:
   m_ObjectHideFlags: 0

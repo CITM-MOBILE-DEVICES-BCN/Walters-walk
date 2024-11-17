@@ -5,45 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class NavigationController : MonoBehaviour
 {
-    public List<string> sceneNames;
-    public List<GameObject> screenPrefabs;
-    public List<GameObject> activeScreens;
-    public static NavigationController instance;
-
-    private void Awake()
+    public void LoadSceneRequest(string sceneName)
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-    }
-    public void LoadScene(string sceneName)
-    {
-        int index = sceneNames.IndexOf(sceneName);
-        if (index != -1)
-        {
-            SceneManager.LoadScene(sceneName);
-        }
+        GameManager.instance.LoadScene(sceneName);
     }
 
-    public void LoadScreen(string screenName)
+    public void LoadScreenRequest(string screenName)
     {
-        var screenToInstantiate = screenPrefabs.Find(screen => screen.name == screenName);
-        if (screenToInstantiate != null)
-        {
-            var screen = Instantiate(screenToInstantiate);
-            activeScreens.Add(screen);
-        }
+        GameManager.instance.LoadScreen(screenName);
     }
 
-    public void DestroyScreen(string screenName)
+    public void DestroyScreenRequest(string screenName)
     {
-       if (activeScreens.Find(screen => screen.name == screenName) != null)
-       {
-           Destroy(activeScreens.Find(screen => screen.name == screenName));
-       }
-       activeScreens.Remove(activeScreens.Find(screen => screen.name == screenName));
+       GameManager.instance.DestroyScreen(screenName);
     }
     
 }
