@@ -34,5 +34,6 @@ public class LoadingBar : MonoBehaviour
         yield return new WaitForSeconds(1);
         loadingValue = 1;
         loadingBar.value = loadingValue;
+        NavigationController.instance.LoadScene("Lobby");
     }
 }

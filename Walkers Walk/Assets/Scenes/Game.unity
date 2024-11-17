@@ -222,6 +222,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2802111564689469632, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
+        type: 3}
+      propertyPath: m_Name
+      value: openCloseMobile
+      objectReference: {fileID: 0}
     - target: {fileID: 6494890843839084679, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
         type: 3}
       propertyPath: m_Pivot.x
