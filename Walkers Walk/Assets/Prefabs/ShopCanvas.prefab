@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7349919845048331972}
   - component: {fileID: 560250898375177389}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: FundasButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,33 +120,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7349919845048331972}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
-          type: 3}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: LoadScreenRequest
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Fundas
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
-          type: 3}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: DestroyScreenRequest
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ShopCanvas
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2418675149812208579
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +268,7 @@ GameObject:
   - component: {fileID: 361634352550204422}
   - component: {fileID: 2693844826798406279}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BuffsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,33 +375,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 361634352550204422}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
-          type: 3}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: LoadScreenRequest
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Buffs
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
-          type: 3}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: DestroyScreenRequest
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ShopCanvas
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &3230603093569867762
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +389,7 @@ GameObject:
   - component: {fileID: 2138272503114489493}
   - component: {fileID: 1486522835437962189}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ReturnMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -548,20 +496,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2138272503114489493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
-          type: 3}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: DestroyScreenRequest
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ShopCanvas
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &4110293155083269851
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +509,7 @@ GameObject:
   - component: {fileID: 4731151916999198874}
   - component: {fileID: 3940881222602141087}
   - component: {fileID: 2158147118592142818}
+  - component: {fileID: 8382852754782892660}
   m_Layer: 5
   m_Name: ShopCanvas
   m_TagString: Untagged
@@ -594,8 +530,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6699077426333723375}
-  - {fileID: 7727445019295063374}
   - {fileID: 992850673164196202}
+  - {fileID: 7727445019295063374}
   - {fileID: 6105234359681352443}
   - {fileID: 2741510259971163553}
   m_Father: {fileID: 0}
@@ -668,6 +604,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8382852754782892660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4110293155083269851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc50935aba1991549ae3f6131e30e6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnMenuButton: {fileID: 1486522835437962189}
+  buffsButton: {fileID: 2693844826798406279}
+  fundasButton: {fileID: 560250898375177389}
 --- !u!1 &5635154711049510910
 GameObject:
   m_ObjectHideFlags: 0

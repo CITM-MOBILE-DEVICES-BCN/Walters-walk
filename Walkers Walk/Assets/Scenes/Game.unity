@@ -1085,7 +1085,7 @@ GameObject:
   - component: {fileID: 1547334721}
   - component: {fileID: 1547334720}
   m_Layer: 5
-  m_Name: btn_Play (1)
+  m_Name: rerturnMetaButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1154,20 +1154,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1547334721}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
-          type: 3}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: LoadSceneRequest
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Meta
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1547334721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,6 +1414,7 @@ GameObject:
   - component: {fileID: 2061287602}
   - component: {fileID: 2061287601}
   - component: {fileID: 2061287600}
+  - component: {fileID: 2061287604}
   m_Layer: 5
   m_Name: GameMenuCanvas
   m_TagString: Untagged
@@ -1522,6 +1510,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2061287604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061287599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fccb3619b783bfa498d10b7e6ab9e669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnMetaButton: {fileID: 1547334720}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

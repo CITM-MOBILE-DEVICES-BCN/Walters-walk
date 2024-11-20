@@ -25,7 +25,7 @@ namespace NavigationSystem
             if (screenToInstantiate != null)
             {
                 var screen = Instantiate(screenToInstantiate);
-                screen.transform.SetParent(NavigationManager.instance.canvasForInstantiations.transform, false);
+                screen.transform.SetParent(GameManager.instance.canvasForInstantiations.transform, false);
                 this.activeScreens.Add(screen);
             }
         }

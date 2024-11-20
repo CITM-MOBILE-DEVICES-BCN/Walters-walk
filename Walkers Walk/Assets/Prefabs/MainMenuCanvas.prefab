@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 9011141492077237753}
   - component: {fileID: 8638928339485452308}
   m_Layer: 5
-  m_Name: btn_Play
+  m_Name: PlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -330,10 +330,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4857316137728675582, guid: d27d89f94e39c954a8bbf476e6d72345,
+      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
           type: 3}
-        m_TargetAssemblyTypeName: NavigationController, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
+        m_MethodName: LoadSceneRequest
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 1767876293464652639}
   - component: {fileID: 2953900620488864319}
   m_Layer: 5
-  m_Name: shop
+  m_Name: ShopButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,10 +732,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4857316137728675582, guid: d27d89f94e39c954a8bbf476e6d72345,
+      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
           type: 3}
-        m_TargetAssemblyTypeName: NavigationController, Assembly-CSharp
-        m_MethodName: LoadScreen
+        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
+        m_MethodName: LoadScreenRequest
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 4020474851272590707}
   - component: {fileID: 8571343107519825908}
   m_Layer: 5
-  m_Name: btn_Play (1)
+  m_Name: ReturnLobbyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -866,10 +866,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4857316137728675582, guid: d27d89f94e39c954a8bbf476e6d72345,
+      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
           type: 3}
-        m_TargetAssemblyTypeName: NavigationController, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
+        m_MethodName: LoadSceneRequest
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1297,6 +1297,7 @@ GameObject:
   - component: {fileID: 7767430347289279911}
   - component: {fileID: 164931228554938330}
   - component: {fileID: 3079378738563981136}
+  - component: {fileID: 3208036226299921806}
   m_Layer: 5
   m_Name: MainMenuCanvas
   m_TagString: Untagged
@@ -1393,3 +1394,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3208036226299921806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144599570172816282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b40ccf47498da8b43b24611c0e17fd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopButton: {fileID: 2953900620488864319}
+  playButton: {fileID: 8638928339485452308}
+  returnLobbyButton: {fileID: 8571343107519825908}

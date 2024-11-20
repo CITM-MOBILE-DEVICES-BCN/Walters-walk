@@ -35,6 +35,6 @@ public class LoadingBar : MonoBehaviour
         yield return new WaitForSeconds(1);
         loadingValue = 1;
         loadingBar.value = loadingValue;
-        NavigationManager.instance.LoadSceneRequest("Lobby");
+        GameManager.instance.LoadSceneRequest("Lobby");
     }
 }
