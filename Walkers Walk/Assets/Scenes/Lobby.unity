@@ -1159,9 +1159,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4857316137728675582, guid: d27d89f94e39c954a8bbf476e6d72345,
+      - m_Target: {fileID: 1622587919530282388, guid: 0c22231681fb8364ea89c8e507765b90,
           type: 3}
-        m_TargetAssemblyTypeName: NavigationController, Assembly-CSharp
+        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
         m_MethodName: LoadSceneRequest
         m_Mode: 5
         m_Arguments:

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using NavigationSystem;
 
 public class LoadingBar : MonoBehaviour
 {
@@ -34,6 +35,6 @@ public class LoadingBar : MonoBehaviour
         yield return new WaitForSeconds(1);
         loadingValue = 1;
         loadingBar.value = loadingValue;
-        GameManager.instance.LoadScene("Lobby");
+        NavigationManager.instance.LoadSceneRequest("Lobby");
     }
 }
