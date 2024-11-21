@@ -8,12 +8,15 @@ using NavigationSystem;
 
 public class NavigationSystemTest
 {
-
+    // Test the navigation system by loading different scenes and screens
     [UnityTest]
     public IEnumerator TestNavigationSystem()
     {
+        // Load the splash screen using the SceneManager,
+        // needed to instantiate the GameManager with the NavigationSystem
         SceneManager.LoadScene("SplashScreen");
         yield return new WaitForSeconds(1);
+        // Navigate through the different scenes and screens using the NavigationSystem
         GameManager.instance.LoadSceneRequest("Lobby");
         yield return new WaitForSeconds(1);
         GameManager.instance.LoadSceneRequest("Meta");
