@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,35 +5,51 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [Header("Prefab Settings")]
-    public GameObject prefab;         // El prefab que se va a espawnear
-    public Transform spawnPoint;      // Punto donde se espawnean los prefabs
-    public float spawnInterval = 2f;  // Intervalo de tiempo entre spawns
+    public GameObject[] prefabs;
+    public Transform spawnPoint;
+    public float spawnInterval = 2f;
 
     [Header("Random Spawn Settings")]
-    public float minZ = -5f;          // Mínima posición Z para el spawn
-    public float maxZ = 5f;           // Máxima posición Z para el spawn
+    [Range(0f, 10f)]
+    public float perpendicularOffset = 5f;
+    [Range(0f, 10f)]
+    public float alignedOffset = 5f;
 
     [Header("Movement Settings")]
-    public float moveSpeed = 10f;      // Velocidad de movimiento de los prefabs
-    public float moveLimit = 90f;     // Distancia máxima que puede recorrer el prefab
+    public float moveSpeed = 10f;
+    public float moveLimit = 90f;
 
     private void Start()
     {
-        // Inicia el proceso de espawnear prefabs repetidamente
         InvokeRepeating(nameof(SpawnPrefab), 0f, spawnInterval);
     }
 
     private void SpawnPrefab()
     {
-        // Instancia el prefab en el punto de spawn con su rotación original
-        GameObject newPrefab = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
-        // Agrega un script de movimiento al prefab instanciado
-        newPrefab.AddComponent<MoveForward>().Initialize(moveSpeed, moveLimit);
+        Vector3 pOffset = transform.right * Random.Range(-perpendicularOffset, perpendicularOffset);
+        Vector3 aOffset = transform.forward * Random.Range(-alignedOffset, alignedOffset);
 
-        float randomZ = UnityEngine.Random.Range(minZ, maxZ);
-        Vector3 spawnPosition = new Vector3(spawnPoint.position.x, spawnPoint.position.y, randomZ);
-        //Vector3 randomPosition = new Vector3(spawnPoint.position.x, spawnPoint.position.y, UnityEngine.Random.Range(minZ, maxZ));
-        //Vector3 randomPosition = new Vector3(UnityEngine.Random.Range(minZ, maxZ), spawnPoint.position.y, spawnPoint.position.z);
-        //Vector3 randomPosition = new Vector3(spawnPoint.position.x, UnityEngine.Random.Range(minZ, maxZ), spawnPoint.position.z);
+        GameObject newPrefab = Instantiate(
+            prefabs[Random.Range(0, prefabs.Length)],
+            spawnPoint.position + pOffset + aOffset,
+            spawnPoint.rotation
+        );
+        newPrefab.AddComponent<MoveForward>().Initialize(moveSpeed, moveLimit);
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (spawnPoint != null)
+        {
+            Gizmos.color = new Color(0, 1, 0, 0.25f);
+            Vector3 areaCenter = spawnPoint.position;
+
+            Vector3 areaSize = transform.right * perpendicularOffset * 2 + transform.forward * alignedOffset * 2;
+
+            Gizmos.DrawCube(areaCenter, areaSize);
+
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireCube(areaCenter, areaSize);
+        }
     }
 }
