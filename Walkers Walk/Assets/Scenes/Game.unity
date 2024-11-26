@@ -475,7 +475,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 77.6
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -502,11 +502,11 @@ Transform:
   m_GameObject: {fileID: 480362263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 0.36, z: -0.010000229}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 640725692}
+  m_Father: {fileID: 1638558156}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &480362267
 MonoBehaviour:
@@ -873,11 +873,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5140296237942225138, guid: 086fa208181f0ab4bad670f43561aef3,
         type: 3}
-      propertyPath: spawnInterval
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5140296237942225138, guid: 086fa208181f0ab4bad670f43561aef3,
-        type: 3}
       propertyPath: prefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -905,6 +900,7 @@ GameObject:
   - component: {fileID: 640725690}
   - component: {fileID: 640725689}
   - component: {fileID: 640725693}
+  - component: {fileID: 640725694}
   m_Layer: 0
   m_Name: Player
   m_TagString: Person
@@ -998,7 +994,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 480362266}
+  - {fileID: 1638558156}
   - {fileID: 593369460}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1014,7 +1010,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49722ae16edcee4abed76495367f39a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 3.5
+--- !u!54 &640725694
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640725688}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 118
+  m_CollisionDetection: 0
 --- !u!1001 &710057176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1082,11 +1105,6 @@ PrefabInstance:
         type: 3}
       propertyPath: alignedOffset
       value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5140296237942225138, guid: 086fa208181f0ab4bad670f43561aef3,
-        type: 3}
-      propertyPath: spawnInterval
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5140296237942225138, guid: 086fa208181f0ab4bad670f43561aef3,
         type: 3}
@@ -1461,6 +1479,18 @@ MonoBehaviour:
       - m_Target: {fileID: 640725693}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
         m_MethodName: ToggleMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1638558157}
+        m_TargetAssemblyTypeName: CameraController, Assembly-CSharp
+        m_MethodName: LookBothWays
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2485,6 +2515,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625304506}
   m_CullTransparentMesh: 1
+--- !u!1 &1638558155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1638558156}
+  - component: {fileID: 1638558157}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1638558156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638558155}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 480362266}
+  m_Father: {fileID: 640725692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1638558157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638558155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838cfc979051cdd4e83f35da58438f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAngle: 75
+  rotationSpeed: 3.5
+  pauseDuration: 0.1
 --- !u!1 &1813552344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,7 +2574,6 @@ GameObject:
   - component: {fileID: 1813552348}
   - component: {fileID: 1813552347}
   - component: {fileID: 1813552346}
-  - component: {fileID: 1813552345}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -2504,28 +2581,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1813552345
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813552344}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1813552346
 MeshRenderer:
   m_ObjectHideFlags: 0
