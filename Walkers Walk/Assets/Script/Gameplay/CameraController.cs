@@ -8,13 +8,17 @@ public class CameraController : MonoBehaviour
     public float rotationSpeed = 2f;
     public float pauseDuration = 0.5f;
     private bool isMoving = true;
+    private bool isLooking = false;
 
     public void LookBothWays()
     {
         if (isMoving)
         {
             isMoving = false;
-            StartCoroutine(LookRoutine());
+            if(!isLooking)
+            {
+                StartCoroutine(LookRoutine());
+            }
         }
         else
         {
@@ -24,6 +28,7 @@ public class CameraController : MonoBehaviour
 
     private IEnumerator LookRoutine()
     {
+        isLooking = true;
         yield return RotateToAngle(rotationAngle);
         yield return new WaitForSeconds(pauseDuration);
 
@@ -31,6 +36,7 @@ public class CameraController : MonoBehaviour
         yield return new WaitForSeconds(pauseDuration);
 
         yield return RotateToAngle(rotationAngle);
+        isLooking = false;
     }
 
     private IEnumerator RotateToAngle(float angle)
