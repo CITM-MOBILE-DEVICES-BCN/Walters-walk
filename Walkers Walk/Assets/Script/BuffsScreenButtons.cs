@@ -9,7 +9,7 @@ public class BuffsScreenButtons : MonoBehaviour
     
     private void Awake()
     {
-        returnShopButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("Buffs"));
+        returnShopButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("BuffsCanvas"));
         returnShopButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("ShopCanvas"));
     }
 }

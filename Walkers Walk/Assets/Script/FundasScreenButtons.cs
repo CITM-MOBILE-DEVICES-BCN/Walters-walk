@@ -9,7 +9,7 @@ public class FundasScreenButtons : MonoBehaviour
 
     private void Awake()
     {
-        returnShopButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("Fundas"));
+        returnShopButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("CasesCanvas"));
         returnShopButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("ShopCanvas"));
     }
 }

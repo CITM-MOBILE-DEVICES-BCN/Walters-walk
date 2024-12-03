@@ -12,9 +12,9 @@ public class ShopScreenButtons : MonoBehaviour
     private void Awake()
     {
         returnMenuButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("ShopCanvas"));
-        buffsButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("Buffs"));
+        buffsButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("BuffsCanvas"));
         buffsButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("ShopCanvas"));
-        fundasButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("Fundas"));
+        fundasButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("CasesCanvas"));
         fundasButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("ShopCanvas"));
     }
 }
