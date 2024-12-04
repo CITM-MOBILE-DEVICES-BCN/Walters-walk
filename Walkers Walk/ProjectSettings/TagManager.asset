@@ -8,6 +8,7 @@ TagManager:
   - Bike
   - Person
   - Truck
+  - interaction
   layers:
   - Default
   - TransparentFX

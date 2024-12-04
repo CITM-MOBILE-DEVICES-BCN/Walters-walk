@@ -1,3 +1,4 @@
+using PopUpSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +11,13 @@ public class CameraController : MonoBehaviour
     private bool isMoving = true;
     private bool isLooking = false;
 
-    public void LookBothWays()
+    public void LookBothWays(PhoneController.PhoneState state)
     {
+        if(state != PhoneController.PhoneState.Closed)
+        {
+            return;
+        }
+
         if (isMoving)
         {
             isMoving = false;

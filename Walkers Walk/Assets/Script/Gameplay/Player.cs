@@ -1,3 +1,4 @@
+using PopUpSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,8 +22,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void ToggleMovement()
+    public void ToggleMovement(PhoneController.PhoneState state)
     {
+        if (state != PhoneController.PhoneState.Closed)
+        {
+            return;
+        }
+
         isMoving = !isMoving;
     }
 

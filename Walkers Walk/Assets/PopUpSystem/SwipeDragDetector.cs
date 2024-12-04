@@ -3,45 +3,28 @@ using UnityEngine;
 
 namespace PopUpSystem
 {
-    public class SwipeDragDetector : MonoBehaviour
+    public class SwipeDragDetector
     {
-        public static SwipeDragDetector Instance { get; private set; }
-
-        // Actions
-        public Action<Vector2> OnDragStartAction; // Inicio del arrastre
-        public Action<Vector2> OnDragAction; // Movimiento durante el arrastre
-        public Action<SwipeDirection> OnSwipeAction; // Dirección del swipe
+        public Action<Vector2> OnDragStartAction;
+        public Action<Vector2> OnDragAction;
+        public Action<SwipeDirection> OnSwipeAction;
+        public Action OnTouchAction;
 
         public enum SwipeDirection
         {
+            None,
             Up,
             Down,
             Left,
             Right
         }
 
-        private Vector2 startTouchPosition; // Posición inicial del toque
-        private Vector2 currentTouchPosition; // Posición actual durante el arrastre
+        private Vector2 startTouchPosition;
+        private Vector2 currentTouchPosition;
         private bool isDragging = false;
-        private float minSwipeDistance = 50f; // Distancia mínima para considerar un swipe
+        private float minSwipeDistance = 50f;
 
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Instance = this;
-        }
-
-        private void Update()
-        {
-            DetectTouchOrMouse();
-        }
-
-        private void DetectTouchOrMouse()
+        public void DetectTouchOrMouse()
         {
             if (Input.touchCount > 0)
             {
@@ -52,19 +35,19 @@ namespace PopUpSystem
                     case TouchPhase.Began:
                         startTouchPosition = touch.position;
                         isDragging = false;
-                        OnDragStartAction?.Invoke(startTouchPosition); // Inicio del arrastre
+                        OnDragStartAction?.Invoke(startTouchPosition);
                         break;
 
                     case TouchPhase.Moved:
                         currentTouchPosition = touch.position;
                         isDragging = true;
-                        OnDragAction?.Invoke(currentTouchPosition); // Movimiento del arrastre
+                        OnDragAction?.Invoke(currentTouchPosition);
                         break;
 
                     case TouchPhase.Ended:
                         currentTouchPosition = touch.position;
 
-                        if (!isDragging) // Si no hubo un arrastre prolongado, evaluamos si fue un swipe
+                        if (!isDragging)
                         {
                             HandleSwipe();
                         }
@@ -85,13 +68,13 @@ namespace PopUpSystem
             {
                 startTouchPosition = Input.mousePosition;
                 isDragging = false;
-                OnDragStartAction?.Invoke(startTouchPosition); // Inicio del arrastre
+                OnDragStartAction?.Invoke(startTouchPosition);
             }
             else if (Input.GetMouseButton(0))
             {
                 currentTouchPosition = Input.mousePosition;
                 isDragging = true;
-                OnDragAction?.Invoke(currentTouchPosition); // Movimiento del arrastre
+                OnDragAction?.Invoke(currentTouchPosition);
             }
         }
 
@@ -129,6 +112,10 @@ namespace PopUpSystem
                         OnSwipeAction?.Invoke(SwipeDirection.Down);
                     }
                 }
+            }
+            else
+            {
+                OnTouchAction?.Invoke();
             }
         }
     }

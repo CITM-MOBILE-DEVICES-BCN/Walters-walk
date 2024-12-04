@@ -3,18 +3,22 @@ using UnityEngine;
 
 namespace PopUpSystem
 {
-    public class PhoneAnimator : MonoBehaviour
+    public class PhoneAnimator
     {
-        [SerializeField] private RectTransform popupTransform;
-        [SerializeField] private float animationDuration = 0.5f;
-        [SerializeField] private float visibleHeight = 0f;
+        public RectTransform popupTransform;
+        public float animationDuration = 0.5f;
+        public float visibleHeight = 0f;
 
         private Vector3 initialPosition;
         private Vector3 lastPosition;
         private Vector3 startDragPosition;
 
-        void Awake()
+        public PhoneAnimator(RectTransform pT, float aD, float vH)
         {
+            popupTransform = pT;
+            animationDuration = aD;
+            visibleHeight = vH;
+
             initialPosition = popupTransform.position;
             Debug.Log($"Initial position: {initialPosition}");
         }
