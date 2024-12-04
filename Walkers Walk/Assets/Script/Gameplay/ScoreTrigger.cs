@@ -19,7 +19,7 @@ public class ScoreTrigger : MonoBehaviour
             }
 
             // Opcional: Desactiva este trigger si no quieres que sume puntaje varias veces
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
 }

@@ -140,6 +140,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Currency
       objectReference: {fileID: 0}
+    - target: {fileID: 5388970250042930293, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 160
+      objectReference: {fileID: 0}
     - target: {fileID: 6494890843839084679, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
         type: 3}
       propertyPath: m_Pivot.x
@@ -240,6 +245,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7734199089922028410, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -252
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734199089922028410, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 574
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741951829349338792, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 579
+      objectReference: {fileID: 0}
     - target: {fileID: 8144599570172816282, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
         type: 3}
       propertyPath: m_Name
@@ -256,7 +276,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 65491137756572138, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5, type: 3}
@@ -365,7 +386,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
