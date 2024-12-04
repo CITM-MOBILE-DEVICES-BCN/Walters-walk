@@ -1,4 +1,4 @@
-using TMPro;
+//using TMPro;
 using UnityEngine;
 
 
@@ -32,7 +32,7 @@ namespace ScoreSystem
             if (scoreText != null)
             {
                 Debug.Log("Object found: " + scoreText.name);
-                scoreText.GetComponent<TextMeshProUGUI>().text = score.ToString();
+                //scoreText.GetComponent<TextMeshProUGUI>().text = score.ToString();
             }
             else Debug.Log("Object not found!");
         }
