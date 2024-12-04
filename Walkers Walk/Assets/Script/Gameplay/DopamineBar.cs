@@ -9,7 +9,7 @@ public class DopamineBar : MonoBehaviour
     private Slider dopamineBar;
     [SerializeField] private float dopamineDecreaseRate = 0.1f;
     [SerializeField] private float dopamineIncreaseRate = 10f;
-    [SerializeField] private UnityEvent OnDeath;
+    [SerializeField] private PlayerData playerData;
 
     private void Start()
     {
@@ -22,7 +22,7 @@ public class DopamineBar : MonoBehaviour
         dopamineBar.value -= dopamineDecreaseRate * Time.deltaTime;
         if(dopamineBar.value <= 0)
         {
-            OnDeath?.Invoke();
+            playerData.OnDeath();
         }
     }
 

@@ -9,9 +9,18 @@ public class ScoreManager : MonoBehaviour
 {
     [SerializeField] private PlayerData playerData;
     public TextMeshProUGUI scoreText; 
-    private int score = 0; 
-    
-   
+    private int score = 0;
+
+    private void OnEnable()
+    {
+        playerData.OnDeathAction += ResetScore;
+    }
+
+    private void OnDisable()
+    {
+        playerData.OnDeathAction -= ResetScore;
+    }
+
     public void IncreaseScore(int amount)
     {
         score += amount;
@@ -29,8 +38,11 @@ public class ScoreManager : MonoBehaviour
 
     public void ResetScore()
     {
-        playerData.IncreaseCurrency(score);
-        playerData.Save();
+        if(score > 0)
+        {
+            playerData.IncreaseCurrency(score);
+            playerData.Save();
+        }
         score = 0;
         UpdateScoreText();
     }

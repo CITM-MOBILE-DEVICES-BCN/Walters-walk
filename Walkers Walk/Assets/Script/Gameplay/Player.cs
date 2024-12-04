@@ -8,6 +8,16 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f;
     private bool isMoving = true;
     private Vector3 initialPosition;
+    [SerializeField] private PlayerData playerData;
+
+    private void OnEnable()
+    {
+        playerData.OnDeathAction += Die;
+    }
+    private void OnDisable()
+    {
+        playerData.OnDeathAction -= Die;
+    }
 
     void Start()
     {
@@ -32,10 +42,10 @@ public class Player : MonoBehaviour
         isMoving = !isMoving;
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionStay(Collision collision)
     {
         Debug.Log($"Collision detected with: {collision.gameObject.name}");
-        Die();
+        playerData.OnDeath();
     }
 
     public void Die()

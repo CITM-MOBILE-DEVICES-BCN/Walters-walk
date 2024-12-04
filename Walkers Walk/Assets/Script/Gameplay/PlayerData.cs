@@ -14,11 +14,14 @@ public class PlayerData : ScriptableObject
 {
     private PlayerSerializableData data;
 
+    public Action OnDeathAction;
+
     private string filePath => Path.Combine(Application.dataPath, "GameData", "settings.gamedata");
 
     public void IncreaseCurrency(int amount)
     {
         data.currency += amount;
+        Debug.Log("Currency increased" + data.currency);
     }
 
     public void DecreaseCurrency(int amount)
@@ -29,11 +32,18 @@ public class PlayerData : ScriptableObject
         }
 
         data.currency -= amount;
+
+        Debug.Log("Currency decreased" + data.currency);
     }
 
     public bool CanAfford(int amount)
     {
         return data.currency >= amount;
+    }
+
+    public void OnDeath()
+    {
+        OnDeathAction?.Invoke();
     }
 
     public void Save()
