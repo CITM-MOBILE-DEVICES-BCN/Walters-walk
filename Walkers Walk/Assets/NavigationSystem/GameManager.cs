@@ -8,9 +8,8 @@ using NavigationSystem;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public NavigationController navigationController;
-
     public GameObject canvasForInstantiations;
+    public NavigationController navigationController;
 
     private void Awake()
     {

@@ -158,12 +158,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.0000153, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &87653897 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4156692550719485270, guid: 452e9ae425af5bd4e94fbe2cac75705a,
-    type: 3}
-  m_PrefabInstance: {fileID: 951001216767443572}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &416632285
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,8 +400,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 640725692}
-  roadPrefab1: {fileID: 1150417562}
-  roadPrefab2: {fileID: 87653897}
+  roadPrefab1: {fileID: 4693220038099961765, guid: 33f621eab72f87e479480f55a2c5e097,
+    type: 3}
+  roadPrefab2: {fileID: 4156692550719485270, guid: 452e9ae425af5bd4e94fbe2cac75705a,
+    type: 3}
   spawnDistance: 10
   deleteDistance: 10
   spacing: 10
@@ -605,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 640725688}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 1, z: -9.47}
+  m_LocalPosition: {x: 0.06, y: 1.86, z: -9.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1094,12 +1090,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1150417562 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4693220038099961765, guid: 33f621eab72f87e479480f55a2c5e097,
-    type: 3}
-  m_PrefabInstance: {fileID: 4927711438782992706}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1299479674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1574,7 @@ Transform:
   m_GameObject: {fileID: 1813552344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.85970616, y: -0.03, z: 127.4}
+  m_LocalPosition: {x: 0.85970616, y: 0.6, z: 127.4}
   m_LocalScale: {x: 8.943396, y: 1, z: 29.040548}
   m_ConstrainProportionsScale: 0
   m_Children: []
