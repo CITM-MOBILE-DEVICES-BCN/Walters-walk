@@ -619,6 +619,7 @@ MonoBehaviour:
   returnMenuButton: {fileID: 1486522835437962189}
   buffsButton: {fileID: 2693844826798406279}
   fundasButton: {fileID: 560250898375177389}
+  currencyText: {fileID: 1506692020230823687}
 --- !u!1 &5635154711049510910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,11 +1078,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: CurrencyText
       objectReference: {fileID: 0}
+    - target: {fileID: 7486980666761619979, guid: b1d134b7517c76a479f4e1e91be91dae,
+        type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1d134b7517c76a479f4e1e91be91dae, type: 3}
+--- !u!114 &1506692020230823687 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7486980666761619979, guid: b1d134b7517c76a479f4e1e91be91dae,
+    type: 3}
+  m_PrefabInstance: {fileID: 8291058020319573260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4763559623721746724 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3536541124025463848, guid: b1d134b7517c76a479f4e1e91be91dae,

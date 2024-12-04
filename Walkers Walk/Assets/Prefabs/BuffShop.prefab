@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6615765950996329685}
+  - component: {fileID: 560528295442711249}
   m_Layer: 5
   m_Name: BuffShop
   m_TagString: Untagged
@@ -37,6 +38,21 @@ RectTransform:
   m_AnchoredPosition: {x: -30.196, y: 455}
   m_SizeDelta: {x: 575.60803, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &560528295442711249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027319113350334834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3097cbef17bca54e9323eb2862fc8ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpCost: 50
+  buyPowerUpButton: {fileID: 4815556502439454738}
+  currencyText: {fileID: 0}
 --- !u!1001 &5842799734145796554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -161,6 +177,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5842799734145796554}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4815556502439454738 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1423559998922301912, guid: 7e6b04f991aae9b47ae37d08f71067cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5842799734145796554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8044137597968486987
 PrefabInstance:
   m_ObjectHideFlags: 0

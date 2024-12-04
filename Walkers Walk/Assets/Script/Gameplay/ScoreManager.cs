@@ -26,7 +26,6 @@ public class ScoreManager : MonoBehaviour
         score += amount;
         UpdateScoreText();
     }
-
   
     private void UpdateScoreText()
     {

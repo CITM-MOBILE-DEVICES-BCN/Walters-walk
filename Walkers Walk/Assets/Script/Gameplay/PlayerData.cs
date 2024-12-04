@@ -82,4 +82,9 @@ public class PlayerData : ScriptableObject
             Debug.LogWarning($"Save file not found at: {filePath}");
         }
     }
+
+    public string GetCurrency()
+    {
+        return data.currency.ToString();
+    }
 }

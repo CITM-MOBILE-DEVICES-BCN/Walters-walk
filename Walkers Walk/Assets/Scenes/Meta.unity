@@ -135,10 +135,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3208036226299921806, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
+        type: 3}
+      propertyPath: currencyText
+      value: 
+      objectReference: {fileID: 871132734}
     - target: {fileID: 4254302685437515579, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
         type: 3}
       propertyPath: m_text
       value: Currency
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432589309788262539, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
+        type: 3}
+      propertyPath: m_text
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5388970250042930293, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
         type: 3}
@@ -281,6 +291,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5, type: 3}
+--- !u!114 &871132734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4432589309788262539, guid: 5c114b28538e3c24cb2d6b2a19e7b3b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 554629262}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1001933294
 GameObject:
   m_ObjectHideFlags: 0
