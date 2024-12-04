@@ -400,10 +400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 640725692}
-  roadPrefab1: {fileID: 4693220038099961765, guid: 33f621eab72f87e479480f55a2c5e097,
-    type: 3}
-  roadPrefab2: {fileID: 4156692550719485270, guid: 452e9ae425af5bd4e94fbe2cac75705a,
-    type: 3}
+  roadPrefab1: {fileID: 1946566552}
+  roadPrefab2: {fileID: 1213698137}
   spawnDistance: 10
   deleteDistance: 10
   spacing: 10
@@ -601,7 +599,7 @@ Transform:
   m_GameObject: {fileID: 640725688}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 1.86, z: -9.47}
+  m_LocalPosition: {x: -0.29, y: 1.04, z: -9.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1090,6 +1088,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1213698137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4156692550719485270, guid: 452e9ae425af5bd4e94fbe2cac75705a,
+    type: 3}
+  m_PrefabInstance: {fileID: 951001216767443572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1299479674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1578,7 @@ Transform:
   m_GameObject: {fileID: 1813552344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.85970616, y: 0.6, z: 127.4}
+  m_LocalPosition: {x: 0.85970616, y: -0.1, z: 127.4}
   m_LocalScale: {x: 8.943396, y: 1, z: 29.040548}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1655,6 +1659,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928510973}
   m_CullTransparentMesh: 1
+--- !u!1 &1946566552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4693220038099961765, guid: 33f621eab72f87e479480f55a2c5e097,
+    type: 3}
+  m_PrefabInstance: {fileID: 4927711438782992706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2061287599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,7 +1927,7 @@ PrefabInstance:
     - target: {fileID: 8895392125815336699, guid: 452e9ae425af5bd4e94fbe2cac75705a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.57
+      value: -69.5
       objectReference: {fileID: 0}
     - target: {fileID: 8895392125815336699, guid: 452e9ae425af5bd4e94fbe2cac75705a,
         type: 3}
@@ -1990,7 +2000,7 @@ PrefabInstance:
     - target: {fileID: 5636588597534210037, guid: 33f621eab72f87e479480f55a2c5e097,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.17
+      value: -80.7
       objectReference: {fileID: 0}
     - target: {fileID: 5636588597534210037, guid: 33f621eab72f87e479480f55a2c5e097,
         type: 3}
