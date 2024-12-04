@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 8546727537732490875}
   - component: {fileID: 2407809897962671918}
   - component: {fileID: 2671265645084651305}
+  - component: {fileID: 5660454739401359117}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -393,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.54901963, b: 0.5176471, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -454,6 +455,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5660454739401359117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2738062380083196494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6555616b538e74291a7c1d436d5918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorManager: {fileID: 11400000, guid: 4f12d4cb042b853439f17436ab81637e, type: 2}
+  assignedColor: {r: 0.21938412, g: 0.5471698, b: 0.5163891, a: 0}
+  button: {fileID: 2671265645084651305}
 --- !u!1 &2758800263924763165
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +754,7 @@ GameObject:
   - component: {fileID: 3302001447745323165}
   - component: {fileID: 2219380484147677818}
   - component: {fileID: 8345503747875832115}
+  - component: {fileID: 461723579361980629}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -786,7 +803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9568628, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -847,6 +864,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &461723579361980629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4726532247873881365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6555616b538e74291a7c1d436d5918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorManager: {fileID: 11400000, guid: 4f12d4cb042b853439f17436ab81637e, type: 2}
+  assignedColor: {r: 0.9559822, g: 1, b: 0, a: 0}
+  button: {fileID: 8345503747875832115}
 --- !u!1 &5829541068675453055
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +945,7 @@ GameObject:
   - component: {fileID: 2586618825532144371}
   - component: {fileID: 908960167986603785}
   - component: {fileID: 2136936725511575497}
+  - component: {fileID: 1089741785104484160}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -961,7 +994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7176471, g: 0.18039216, b: 0.18039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1022,6 +1055,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1089741785104484160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183403785582648914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6555616b538e74291a7c1d436d5918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorManager: {fileID: 11400000, guid: 4f12d4cb042b853439f17436ab81637e, type: 2}
+  assignedColor: {r: 0.7169812, g: 0.1792453, b: 0.1792453, a: 0}
+  button: {fileID: 2136936725511575497}
 --- !u!1 &7066371401652887110
 GameObject:
   m_ObjectHideFlags: 0
