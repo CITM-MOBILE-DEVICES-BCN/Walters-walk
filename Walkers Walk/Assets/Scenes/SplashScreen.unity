@@ -1188,6 +1188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasForInstantiations: {fileID: 5438938701704916971}
   navigationController: {fileID: 2206335389969623248}
+  playerData: {fileID: 11400000, guid: 7c45e6ff0802e874c85ea8c5d6463146, type: 2}
 --- !u!114 &8659850984938184154
 MonoBehaviour:
   m_ObjectHideFlags: 0
