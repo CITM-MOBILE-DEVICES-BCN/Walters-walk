@@ -18,13 +18,11 @@ public class MoveForward : MonoBehaviour
 
     private void Update()
     {
-        // Mueve el objeto hacia adelante en el eje Z
         transform.Translate(Vector3.right * speed * Time.deltaTime);
-
-        // Comprueba si el objeto ha superado el límite
+        transform.position = new Vector3(transform.position.x, startPosition.y, transform.position.z);
         if (Vector3.Distance(startPosition, transform.position) >= limit)
         {
-            Destroy(gameObject); // Destruye el objeto cuando supera el límite
+            Destroy(gameObject);
         }
     }
 
