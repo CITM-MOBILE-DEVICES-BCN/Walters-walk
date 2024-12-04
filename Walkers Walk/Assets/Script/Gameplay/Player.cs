@@ -35,6 +35,11 @@ public class Player : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log($"Collision detected with: {collision.gameObject.name}");
+        Die();
+    }
+
+    public void Die()
+    {
         transform.position = initialPosition;
     }
 }

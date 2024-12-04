@@ -5,7 +5,7 @@ using static PopUpSystem.PhoneController;
 
 namespace PopUpSystem
 {
-    struct Interaction
+    public struct Interaction
     {
         public Interaction(GameObject go, InteractionType iType)
         {
@@ -17,30 +17,37 @@ namespace PopUpSystem
         public InteractionType interactionType;
     }
 
-    public class Interactions
+    public class Interactions : MonoBehaviour
     {
-        private List<Interaction> _interactions;
+        [SerializeField] private List<GameObject> interactionsGO;
+        private List<Interaction> _interactions = new List<Interaction>();
         private Interaction activeInteraction;
 
-        public Interactions(ref List<GameObject> interactionsGO)
+        private void Awake()
         {
-            for(int i = 0; i < interactionsGO.Count; i++)
+            InitializeInteractions();
+        }
+
+        private void InitializeInteractions()
+        {
+            for (int i = 0; i < interactionsGO.Count; i++)
             {
                 InteractionType type = InteractionType.None;
+
                 if (interactionsGO[i].name.Contains("SwipeUp"))
                 {
                     Debug.Log("Interaction type is SwipeUp");
                     type = InteractionType.SwipeUp;
                 }
-                else if (interactionsGO[i].name.Contains("Touch"))
-                {
-                    Debug.Log("Interaction type is Touch");
-                    type = InteractionType.Touch;
-                }
                 else if (interactionsGO[i].name.Contains("DoubleTouch"))
                 {
                     Debug.Log("Interaction type is DoubleTouch");
                     type = InteractionType.DoubleTouch;
+                }
+                else if (interactionsGO[i].name.Contains("Touch"))
+                {
+                    Debug.Log("Interaction type is Touch");
+                    type = InteractionType.Touch;
                 }
                 else
                 {
@@ -50,8 +57,10 @@ namespace PopUpSystem
 
                 _interactions.Add(new Interaction(interactionsGO[i], type));
 
-                _interactions[i].gameObject.SetActive(false);
+                interactionsGO[i].SetActive(false);
+
             }
+            interactionsGO = null;
         }
 
         public InteractionType GetActiveInteractionType()
@@ -61,9 +70,12 @@ namespace PopUpSystem
 
         public void SetActiveInteraction()
         {
-            activeInteraction.gameObject?.SetActive(false);
+            if (activeInteraction.gameObject != null)
+            {
+                activeInteraction.gameObject.SetActive(false);
+            }
 
-            activeInteraction = _interactions[Random.Range(0, _interactions.Count - 1)];
+            activeInteraction = _interactions[Random.Range(0, _interactions.Count)];
             activeInteraction.gameObject.SetActive(true);
         }
     }

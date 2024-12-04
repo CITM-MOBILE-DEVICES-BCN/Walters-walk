@@ -24,7 +24,6 @@ namespace PopUpSystem
         #region Interactions
         [Header("Interactions")]
         private Interactions interactions;
-        [SerializeField] private List<GameObject> interactionsGO;
         public UnityEvent OnInteractionCompleted;
 
         public enum InteractionType
@@ -55,13 +54,7 @@ namespace PopUpSystem
         {
             phoneAnimator = new PhoneAnimator(popupTransform, animationDuration, visibleHeight);
             swipeDragDetector = new SwipeDragDetector();
-            //interactions = new Interactions(interactionsGO.ToArray());
-        }
-
-        private void Start()
-        {
-            interactions = new Interactions(ref interactionsGO);
-            interactionsGO = null;
+            interactions = GetComponent<Interactions>();
         }
 
         private void OnEnable()

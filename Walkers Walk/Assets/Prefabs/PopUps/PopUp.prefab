@@ -340,6 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4505618387190083032}
   - component: {fileID: 1393865585410503241}
+  - component: {fileID: 2344515051065627525}
   m_Layer: 5
   m_Name: PopUp
   m_TagString: Untagged
@@ -386,10 +387,6 @@ MonoBehaviour:
   popupTransform: {fileID: 4505618387190083032}
   animationDuration: 0.3
   visibleHeight: 400
-  interactionsGO:
-  - {fileID: 8145731066204534909}
-  - {fileID: 2481726595490436393}
-  - {fileID: 5124365215356048551}
   OnInteractionCompleted:
     m_PersistentCalls:
       m_Calls:
@@ -436,6 +433,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2344515051065627525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432762180494813606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a520e565cbc5ddb46b331be840fcfc75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionsGO:
+  - {fileID: 8145731066204534909}
+  - {fileID: 2481726595490436393}
+  - {fileID: 5124365215356048551}
 --- !u!1 &2481726595490436393
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +629,10 @@ MonoBehaviour:
   m_text: '@PaquitoChocolatero
 
 
-    League of Legends should not exist.'
+    League of Legends should not exist.
+
+    (Single
+    Touch)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -887,7 +903,9 @@ MonoBehaviour:
 
 
     Am I the asshole for telling my parents that i''m going to
-    quit uni?'
+    quit uni?
+
+    (Swipe up)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1134,7 +1152,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "MomasosDiego\n\nwen wen haces mobiles but eres un hombre de cultura, as\xED
-    es viejo"
+    es viejo\n(Doble click)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
