@@ -19,13 +19,13 @@ namespace NavigationSystem
             }
         }
 
-        public void LoadScreen(string screenName)
+        public void LoadScreen(string screenName, Transform parent)
         {
             var screenToInstantiate = screenPrefabs.Find(screen => screen.name == screenName);
             if (screenToInstantiate != null)
             {
                 var screen = Instantiate(screenToInstantiate);
-                screen.transform.SetParent(GameManager.instance.canvasForInstantiations.transform, false);
+                screen.transform.SetParent(parent, false);
                 this.activeScreens.Add(screen);
             }
         }

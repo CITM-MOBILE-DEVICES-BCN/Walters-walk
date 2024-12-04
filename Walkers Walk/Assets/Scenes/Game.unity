@@ -1120,6 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28a8a5580fba3f4293d462c66d447e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: 7c45e6ff0802e874c85ea8c5d6463146, type: 2}
   scoreText: {fileID: 1334094368}
 --- !u!4 &804334581
 Transform:

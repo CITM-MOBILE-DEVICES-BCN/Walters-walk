@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameObject canvasForInstantiations;
     public NavigationController navigationController;
+    public PlayerData playerData;
 
     private void Awake()
     {
@@ -20,6 +21,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        playerData.Load();
+    }
+
     public void LoadSceneRequest(string sceneName)
     {
         navigationController.LoadScene(sceneName);
@@ -27,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadScreenRequest(string screenName)
     {
-        navigationController.LoadScreen(screenName);
+        navigationController.LoadScreen(screenName, canvasForInstantiations.transform);
     }
 
     public void DestroyScreenRequest(string screenName)

@@ -7,9 +7,10 @@ using static System.Net.Mime.MediaTypeNames;
 
 public class ScoreManager : MonoBehaviour
 {
+    [SerializeField] private PlayerData playerData;
     public TextMeshProUGUI scoreText; 
     private int score = 0; 
-
+    
    
     public void IncreaseScore(int amount)
     {
@@ -28,6 +29,8 @@ public class ScoreManager : MonoBehaviour
 
     public void ResetScore()
     {
+        playerData.IncreaseCurrency(score);
+        playerData.Save();
         score = 0;
         UpdateScoreText();
     }
