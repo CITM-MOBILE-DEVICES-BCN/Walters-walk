@@ -46,7 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 2314856909007725933, guid: 5884ec6bef95d43458b9cd4104bf3fb6, type: 3}
+  - {fileID: 863389777001713559, guid: a78c80942fdc35640adf40539cc4b3cb, type: 3}
+  - {fileID: 3360883784397468831, guid: fc250950d00a83945b8b8445204da0bd, type: 3}
+  - {fileID: 562218524005513700, guid: bb33cadcdfdbc744a9c8305fb34d3e12, type: 3}
   - {fileID: 519270739262014254, guid: 88c8fc805aa096d4b8e7023f861b3907, type: 3}
+  - {fileID: 5675722874594315227, guid: 3b695e6e9df48ee4a917835ba97a911e, type: 3}
   spawnPoint: {fileID: 2505506822086862188}
   spawnInterval: 7
   perpendicularOffset: 8
