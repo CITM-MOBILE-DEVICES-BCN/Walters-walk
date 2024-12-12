@@ -1921,7 +1921,7 @@ PrefabInstance:
     - target: {fileID: 1079048156867766431, guid: aa94891a12e678e4f94626490fb4230a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1879374909252286661, guid: aa94891a12e678e4f94626490fb4230a,
         type: 3}
@@ -2096,7 +2096,7 @@ MonoBehaviour:
   priority: 1
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 654d0ff01c58e584481b273b99acea61, type: 2}
+  sharedProfile: {fileID: 11400000, guid: a4caab953fc7e594aa04ca41c6f8e5e5, type: 2}
 --- !u!4 &2141315240
 Transform:
   m_ObjectHideFlags: 0
