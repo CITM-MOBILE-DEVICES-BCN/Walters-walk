@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CloudShadowsGLAMOR
+  m_Shader: {fileID: 4800000, guid: 928f242e61f1ab2438e3b7164e5c3358, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Lux_RainRipples:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _cloudTexture:
+        m_Texture: {fileID: 2800000, guid: fe45f62b412258d46bfad10d7a7f9819, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _snowBumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _snowTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _sunTransform:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - cameraDepthNormalsTextureA:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - EdgesControlA: 1
+    - EdgesControlB: 1
+    - EdgesControlC: 1
+    - EdgesControlD: 1
+    - OutlineThickness: 1
+    - Outline_Color_Sensitivity: 0
+    - Outline_Depth_Sensitivity: 0
+    - Outline_Normals_Sensitivity: 0
+    - _Blur: 0
+    - _BottomThreshold: 0
+    - _CameraRainPower: 0.5
+    - _Distortion: 0
+    - _Lux_RainBrightness: 1
+    - _Lux_RainIntensity: 0
+    - _Lux_RippleAnimSpeed: 0
+    - _Lux_RippleTiling: 0
+    - _Lux_WaterBumpDistance: 0
+    - _ObjectRainPower: 0.5
+    - _ShininessSnow: 0
+    - _Size: 0
+    - _SnowTexScale: 0
+    - _TileNumCausticRotMin: 0
+    - _TopThreshold: 0
+    - _Weight: 1
+    - _erasePower: 0
+    - _maskPower: 0
+    - _rainContrast: 0
+    - _rainPower: 1
+    - _snowBrightness: 1
+    - _snowBumpPower: 1
+    - _snowBumpScale: 1
+    m_Colors:
+    - Outline_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _EraseCenterRadius: {r: 0, g: 0, b: 0, a: 0}
+    - _RainSmallDirection: {r: 0, g: 0, b: 0, a: 0}
+    - _SnowColor: {r: 0, g: 0, b: 0, a: 0}
+    - _TimeOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _cloudShadowColor: {r: 0.4867924, g: 0.4867924, b: 0.4867924, a: 0.69803923}
+    - _cloudShadowScale: {r: 1.9, g: 0.8, b: 1.08, a: 0}
+    - _directionControls: {r: 0, g: 0, b: 0, a: 0}
+    - _interactPointRadius: {r: 0, g: 0, b: 0, a: 0}
+    - _mainTexTilingOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _noiseCloudSpeed: {r: -0.024, g: -0.014, b: 0, a: 0}
+    - _radialControls: {r: 0, g: 0, b: 0, a: 0}
+    - _sunTransform: {r: 9.069998, g: 336.07, b: 247.6, a: 0}
+    - _wipeControls: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
