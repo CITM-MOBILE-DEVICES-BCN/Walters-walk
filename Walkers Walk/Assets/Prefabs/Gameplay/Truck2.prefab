@@ -102,6 +102,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Truck2
       objectReference: {fileID: 0}
+    - target: {fileID: 1082215119706929204, guid: 88c8fc805aa096d4b8e7023f861b3907,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727121240741373549, guid: 88c8fc805aa096d4b8e7023f861b3907,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727121240741373549, guid: 88c8fc805aa096d4b8e7023f861b3907,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.371
+      objectReference: {fileID: 0}
     - target: {fileID: 3367046825355150018, guid: 88c8fc805aa096d4b8e7023f861b3907,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -151,6 +166,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704579653372052232, guid: 88c8fc805aa096d4b8e7023f861b3907,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704579653372052232, guid: 88c8fc805aa096d4b8e7023f861b3907,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.387
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
