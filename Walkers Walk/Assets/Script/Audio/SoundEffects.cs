@@ -7,7 +7,9 @@ public class SoundEffects : MonoBehaviour
     public AudioSource audiosystem; 
     public AudioClip sfx1; 
     public AudioClip sfx2; 
-    public AudioClip sfx3; 
+    public AudioClip sfx3;
+    public AudioClip coin;
+
     public Transform player;
     public float activationDistance = 10f; 
 
@@ -53,21 +55,32 @@ public class SoundEffects : MonoBehaviour
             }
         }
 
+       
 
 
-        if (!soundPlayed && audiosystem.isPlaying)
+            if (!soundPlayed && audiosystem.isPlaying)
         {
             audiosystem.Stop();
         }
     }
 
-    private void PlaySound(AudioClip clip)
+    public void PlaySound(AudioClip clip)
     {
         if (audiosystem.clip != clip || !audiosystem.isPlaying)
         {
             audiosystem.clip = clip;
             audiosystem.Play();
+
         }
+
+
     }
 
+    public void PlayCoinSound()
+    {
+        if (audiosystem != null &&  audiosystem != null)
+        {
+            audiosystem.PlayOneShot(coin);
+        }
+    }
 }
