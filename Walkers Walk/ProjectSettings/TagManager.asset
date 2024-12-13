@@ -9,6 +9,7 @@ TagManager:
   - Person
   - Truck
   - interaction
+  - Coin
   layers:
   - Default
   - TransparentFX

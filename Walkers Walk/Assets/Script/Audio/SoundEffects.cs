@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SoundEffects : MonoBehaviour
 {
+    public AudioSource oneShotAudioSource; 
     public AudioSource audiosystem; 
     public AudioClip sfx1; 
     public AudioClip sfx2; 
@@ -55,6 +57,7 @@ public class SoundEffects : MonoBehaviour
             }
         }
 
+
        
 
 
@@ -78,9 +81,10 @@ public class SoundEffects : MonoBehaviour
 
     public void PlayCoinSound()
     {
-        if (audiosystem != null &&  audiosystem != null)
+        if (oneShotAudioSource != null && coin != null)
         {
-            audiosystem.PlayOneShot(coin);
+            oneShotAudioSource.PlayOneShot(coin);
         }
     }
+
 }

@@ -2624,6 +2624,7 @@ MonoBehaviour:
   sfx1: {fileID: 8300000, guid: 7bc1d23762df9c6499c3d0a92b35e6de, type: 3}
   sfx2: {fileID: 8300000, guid: 045bcf15511d1384cb9bdbf28f707a6d, type: 3}
   sfx3: {fileID: 8300000, guid: 57fdd3851115dfd43885786fba9f18fe, type: 3}
+  coin: {fileID: 8300000, guid: 49734cb57de5dc04a979cffbafcf12c3, type: 3}
   player: {fileID: 640725692}
   activationDistance: 10
 --- !u!82 &2113090643
