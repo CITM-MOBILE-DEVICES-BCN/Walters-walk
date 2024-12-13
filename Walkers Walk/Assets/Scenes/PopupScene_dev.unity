@@ -457,6 +457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Phone
       objectReference: {fileID: 0}
+    - target: {fileID: 7397981093508098214, guid: cc62c7a8b71bed94389e6557332dd804,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7843672017572278538, guid: cc62c7a8b71bed94389e6557332dd804,
         type: 3}
       propertyPath: m_Pivot.x
