@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreTrigger : MonoBehaviour
 {
     public int scoreAmount = 10; // Puntaje que se añade al pasar por este trigger
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         // Comprueba si el objeto que atraviesa el trigger es el jugador
         if (other.CompareTag("Person"))
