@@ -11,7 +11,7 @@ public class ScoreTrigger : MonoBehaviour
         if (other.CompareTag("Person"))
         {
             // Busca el script ScoreManager en la escena y llama a IncreaseScore
-            ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+            WW_ScoreManager scoreManager = FindObjectOfType<WW_ScoreManager>();
             SoundEffects soundEffects = FindObjectOfType<SoundEffects>();
             if (scoreManager != null)
             {

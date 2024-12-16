@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 using WW_NavigationSystem;
 
 
-public class GameManager : MonoBehaviour
+public class WW_GameManager2 : MonoBehaviour
 {
-    public static GameManager instance;
+    public static WW_GameManager2 instance;
     public GameObject canvasForInstantiations;
     public NavigationController navigationController;
     public PlayerData playerData;

@@ -14,11 +14,11 @@ public class ShopScreenButtons : MonoBehaviour
 
     private void Awake()
     {
-        returnMenuButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("ShopCanvas"));
-        buffsButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("BuffsCanvas"));
-        buffsButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("ShopCanvas"));
-        fundasButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("CasesCanvas"));
-        fundasButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("ShopCanvas"));
-        currencyText.text = GameManager.instance.playerData.GetCurrency();
+        returnMenuButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("ShopCanvas"));
+        buffsButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("BuffsCanvas"));
+        buffsButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("ShopCanvas"));
+        fundasButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("CasesCanvas"));
+        fundasButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("ShopCanvas"));
+        currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
 }

@@ -12,8 +12,8 @@ public class BuffsScreenButtons : MonoBehaviour
 
     private void Awake()
     {
-        returnShopButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("BuffsCanvas"));
-        returnShopButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("ShopCanvas"));
-        currencyText.text = GameManager.instance.playerData.GetCurrency();
+        returnShopButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("BuffsCanvas"));
+        returnShopButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("ShopCanvas"));
+        currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
 }

@@ -18,11 +18,11 @@ public class BuyPowerUp : MonoBehaviour
 
     private void BuyPowerUpAction()
     {
-        if (GameManager.instance.playerData.CanAfford(powerUpCost))
+        if (WW_GameManager.instance.playerData.CanAfford(powerUpCost))
         {
-            GameManager.instance.playerData.DecreaseCurrency(powerUpCost);
-            GameManager.instance.playerData.Save();
-            currencyText.text = GameManager.instance.playerData.GetCurrency();
+            WW_GameManager.instance.playerData.DecreaseCurrency(powerUpCost);
+            WW_GameManager.instance.playerData.Save();
+            currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
             Debug.Log("Power up bought");
         }
         else

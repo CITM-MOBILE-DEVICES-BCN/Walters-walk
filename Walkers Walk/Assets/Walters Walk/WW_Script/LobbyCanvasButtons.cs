@@ -9,6 +9,6 @@ public class LobbyCanvasButtons : MonoBehaviour
 
     private void Awake()
     {
-        WalterWalkButton.onClick.AddListener(() => GameManager.instance.LoadSceneRequest("Meta"));
+        WalterWalkButton.onClick.AddListener(() => WW_GameManager.instance.LoadSceneRequest("Meta"));
     }
 }

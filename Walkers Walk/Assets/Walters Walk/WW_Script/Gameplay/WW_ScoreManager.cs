@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
 
-public class ScoreManager : MonoBehaviour
+public class WW_ScoreManager : MonoBehaviour
 {
     [SerializeField] private PlayerData playerData;
     public TextMeshProUGUI scoreText; 

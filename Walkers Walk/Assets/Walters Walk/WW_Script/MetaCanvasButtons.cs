@@ -14,10 +14,10 @@ public class MetaCanvasButtons : MonoBehaviour
 
     private void Awake()
     {
-        shopButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("ShopCanvas"));
-        playButton.onClick.AddListener(() => GameManager.instance.LoadSceneRequest("Game"));
-        returnLobbyButton.onClick.AddListener(() => GameManager.instance.LoadSceneRequest("Lobby"));
-        currencyText.text = GameManager.instance.playerData.GetCurrency();
+        shopButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("ShopCanvas"));
+        playButton.onClick.AddListener(() => WW_GameManager.instance.LoadSceneRequest("Game"));
+        returnLobbyButton.onClick.AddListener(() => WW_GameManager.instance.LoadSceneRequest("Lobby"));
+        currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
 
 }

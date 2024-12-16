@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using WW_NavigationSystem;
 
-public class LoadingBar : MonoBehaviour
+public class WW_LoadingBar : MonoBehaviour
 {
     public Slider loadingBar;
     private float loadingValue = 0;
@@ -35,6 +35,6 @@ public class LoadingBar : MonoBehaviour
         yield return new WaitForSeconds(1);
         loadingValue = 1;
         loadingBar.value = loadingValue;
-        GameManager.instance.LoadSceneRequest("Lobby");
+        WW_GameManager.instance.LoadSceneRequest("Lobby");
     }
 }

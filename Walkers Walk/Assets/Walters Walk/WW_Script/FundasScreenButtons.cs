@@ -12,8 +12,8 @@ public class FundasScreenButtons : MonoBehaviour
 
     private void Awake()
     {
-        returnShopButton.onClick.AddListener(() => GameManager.instance.DestroyScreenRequest("CasesCanvas"));
-        returnShopButton.onClick.AddListener(() => GameManager.instance.LoadScreenRequest("ShopCanvas"));
-        currencyText.text = GameManager.instance.playerData.GetCurrency();
+        returnShopButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("CasesCanvas"));
+        returnShopButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("ShopCanvas"));
+        currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
 }

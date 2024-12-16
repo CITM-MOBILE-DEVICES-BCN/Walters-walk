@@ -15,13 +15,13 @@ public class GameMenuCanvasButtons : MonoBehaviour
     private void Awake()
     {
         returnMetaButton.onClick.AddListener(() => ReturnMeta());
-        currencyText.text = GameManager.instance.playerData.GetCurrency();
+        currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
 
     private void ReturnMeta()
     {
-        ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+        WW_ScoreManager scoreManager = FindObjectOfType<WW_ScoreManager>();
         scoreManager.ResetScore();
-        GameManager.instance.LoadSceneRequest("Meta");
+        WW_GameManager.instance.LoadSceneRequest("Meta");
     }
 }
