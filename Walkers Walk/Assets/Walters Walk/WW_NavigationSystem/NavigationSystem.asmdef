@@ -1,6 +1,6 @@
 {
-    "name": "NavigationSystem",
-    "rootNamespace": "NavigationSystem",
+    "name": "WW_NavigationSystem",
+    "rootNamespace": "WW_NavigationSystem",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

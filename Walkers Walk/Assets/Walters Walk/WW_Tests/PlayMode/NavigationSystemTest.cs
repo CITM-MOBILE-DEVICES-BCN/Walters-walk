@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
-using NavigationSystem;
+using WW_NavigationSystem;
 
 //public class NavigationSystemTest
 //{

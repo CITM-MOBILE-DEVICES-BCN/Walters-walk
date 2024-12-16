@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using NavigationSystem;
+using WW_NavigationSystem;
 
 
 public class GameManager : MonoBehaviour
