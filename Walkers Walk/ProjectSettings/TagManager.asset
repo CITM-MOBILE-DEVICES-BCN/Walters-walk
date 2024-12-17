@@ -10,6 +10,8 @@ TagManager:
   - Truck
   - interaction
   - Coin
+  - Dead
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
+  - Ground
+  - Wall
+  - WallGround
   - 
   - 
   - 

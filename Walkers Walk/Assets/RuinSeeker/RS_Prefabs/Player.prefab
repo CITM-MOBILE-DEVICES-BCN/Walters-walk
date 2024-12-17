@@ -87,7 +87,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &4832870891998937324
@@ -188,7 +188,7 @@ MonoBehaviour:
   wallCheckOffset: 0.4405
   groundLayer:
     serializedVersion: 2
-    m_Bits: 640
+    m_Bits: 0
   wallLayer:
     serializedVersion: 2
     m_Bits: 768
@@ -347,7 +347,7 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &4266046474787460790
