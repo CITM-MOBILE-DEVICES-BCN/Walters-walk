@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
+using WW_NavigationSystem;
 
 public class MetaCanvasButtons : MonoBehaviour
 {
@@ -14,10 +15,15 @@ public class MetaCanvasButtons : MonoBehaviour
 
     private void Awake()
     {
-        shopButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("ShopCanvas"));
-        playButton.onClick.AddListener(() => WW_GameManager.instance.LoadSceneRequest("Game"));
-        returnLobbyButton.onClick.AddListener(() => WW_GameManager.instance.LoadSceneRequest("Lobby"));
+        shopButton.onClick.AddListener(() => NavigationController.instance.LoadScreen("ShopCanvas",null));
+        playButton.onClick.AddListener(() => NavigationController.instance.LoadScene("Game"));
+        returnLobbyButton.onClick.AddListener(() => ReturnToLobby());
         currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
-
+    
+    public void ReturnToLobby()
+    {
+        //Destroy GameManager
+        NavigationController.instance.LoadScene("Lobby");
+    }
 }

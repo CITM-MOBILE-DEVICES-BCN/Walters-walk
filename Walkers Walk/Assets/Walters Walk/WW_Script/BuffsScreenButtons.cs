@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
+using WW_NavigationSystem;
 
 public class BuffsScreenButtons : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class BuffsScreenButtons : MonoBehaviour
 
     private void Awake()
     {
-        returnShopButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("BuffsCanvas"));
-        returnShopButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("ShopCanvas"));
+        returnShopButton.onClick.AddListener(() => NavigationController.instance.DestroyScreen("BuffsCanvas"));
+        returnShopButton.onClick.AddListener(() => NavigationController.instance.LoadScreen("ShopCanvas",null));
         currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
 }

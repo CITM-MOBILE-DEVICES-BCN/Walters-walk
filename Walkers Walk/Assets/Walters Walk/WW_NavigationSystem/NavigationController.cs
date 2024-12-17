@@ -10,6 +10,24 @@ namespace WW_NavigationSystem
         public List<string> sceneNames;
         public List<GameObject> screenPrefabs;
         public List<GameObject> activeScreens;
+
+        public static NavigationController instance;
+
+
+        private void Awake()
+        {
+            if (instance == null)
+            {
+                instance = this;
+                DontDestroyOnLoad(this);
+            }
+            else
+            {
+                Destroy(this);
+            }
+
+        }
+
         public void LoadScene(string sceneName)
         {
             int index = sceneNames.IndexOf(sceneName);

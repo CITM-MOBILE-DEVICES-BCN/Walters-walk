@@ -26,15 +26,15 @@ public class WW_LoadingBar : MonoBehaviour
 
     public void FakeLoading()
     {
-        loadingValue += 0.01f;
+        loadingValue += 0.04f;
         loadingBar.value = loadingValue;
     }
 
     IEnumerator completeLoad()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.2f);
         loadingValue = 1;
         loadingBar.value = loadingValue;
-        WW_GameManager.instance.LoadSceneRequest("Lobby");
+        NavigationController.instance.LoadScene("Lobby");
     }
 }
