@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
+using WW_NavigationSystem;
 
 
 public class GameMenuCanvasButtons : MonoBehaviour
@@ -22,6 +23,6 @@ public class GameMenuCanvasButtons : MonoBehaviour
     {
         WW_ScoreManager scoreManager = FindObjectOfType<WW_ScoreManager>();
         scoreManager.ResetScore();
-        WW_GameManager.instance.LoadSceneRequest("Meta");
+        NavigationController.instance.LoadScene("Meta");
     }
 }

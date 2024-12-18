@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3048645322236942627}
   - component: {fileID: 5240249754178898962}
   - component: {fileID: 6516116295928697103}
+  - component: {fileID: 7514696028151992227}
   m_Layer: 5
   m_Name: BuffsCanvas
   m_TagString: Untagged
@@ -64,6 +65,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   returnShopButton: {fileID: 2284053229039534030}
   currencyText: {fileID: 6949983998309486080}
+--- !u!223 &7514696028151992227
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233553405898316380}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1958535779091490094
 GameObject:
   m_ObjectHideFlags: 0

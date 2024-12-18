@@ -16,9 +16,9 @@ public class ShopScreenButtons : MonoBehaviour
     private void Awake()
     {
         returnMenuButton.onClick.AddListener(() => NavigationController.instance.DestroyScreen("ShopCanvas"));
-        buffsButton.onClick.AddListener(() => NavigationController.instance.LoadScreen("BuffsCanvas", null));
+        buffsButton.onClick.AddListener(() => NavigationController.instance.LoadScreen("BuffsCanvas", gameObject.transform));
         buffsButton.onClick.AddListener(() => NavigationController.instance.DestroyScreen("ShopCanvas"));
-        fundasButton.onClick.AddListener(() => NavigationController.instance.LoadScreen("CasesCanvas", null));
+        fundasButton.onClick.AddListener(() => NavigationController.instance.LoadScreen("CasesCanvas", gameObject.transform));
         fundasButton.onClick.AddListener(() => NavigationController.instance.DestroyScreen("ShopCanvas"));
         currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
