@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
+using WW_NavigationSystem;
 
 public class ShopScreenButtons : MonoBehaviour
 {
@@ -14,11 +15,11 @@ public class ShopScreenButtons : MonoBehaviour
 
     private void Awake()
     {
-        returnMenuButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("ShopCanvas"));
-        buffsButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("BuffsCanvas"));
-        buffsButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("ShopCanvas"));
-        fundasButton.onClick.AddListener(() => WW_GameManager.instance.LoadScreenRequest("CasesCanvas"));
-        fundasButton.onClick.AddListener(() => WW_GameManager.instance.DestroyScreenRequest("ShopCanvas"));
+        returnMenuButton.onClick.AddListener(() => NavigationController.instance.DestroyScreen("ShopCanvas"));
+        buffsButton.onClick.AddListener(() => NavigationController.instance.LoadScreen("BuffsCanvas", null));
+        buffsButton.onClick.AddListener(() => NavigationController.instance.DestroyScreen("ShopCanvas"));
+        fundasButton.onClick.AddListener(() => NavigationController.instance.LoadScreen("CasesCanvas", null));
+        fundasButton.onClick.AddListener(() => NavigationController.instance.DestroyScreen("ShopCanvas"));
         currencyText.text = WW_GameManager.instance.playerData.GetCurrency();
     }
 }

@@ -75,6 +75,14 @@ public class GameManager : MonoBehaviour
 
         ScoreManager.Instance.ResetLevelScore();
     }
+
+    public void GoBackToMainMenu(string sceneName)
+    {
+        navManager.ChangeScene(sceneName);
+        ScoreManager.Instance.ResetLevelScore();
+        Destroy(this);
+    }
+
     public void GoBackToLevelSelector(string sceneName)
     {
         navManager.ChangeScene(sceneName);

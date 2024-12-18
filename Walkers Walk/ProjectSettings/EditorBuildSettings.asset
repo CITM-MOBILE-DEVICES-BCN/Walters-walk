@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Walters Walk/WW_Scenes/SplashScreen.unity
     guid: 15d9698570576314e9622f2270a36af4
   - enabled: 1
-    path: Assets/Walters Walk/WW_Scenes/Lobby.unity
+    path: Assets/Walters Walk/WW_Scenes/WW_Lobby.unity
     guid: 8c86481e2b78a934d91da40d0c76a1f2
   - enabled: 1
     path: Assets/Walters Walk/WW_Scenes/Meta.unity
@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RuinSeeker/RS_Scenes/6.Game3.unity
     guid: a039716526d73044b94b4da7a098ae7c
+  - enabled: 1
+    path: Assets/IntegrationSharedAssets/Scenes/Lobby.unity
+    guid: 02f866cc1691f6b458286c5e30c0f1a3
   m_configObjects: {}
